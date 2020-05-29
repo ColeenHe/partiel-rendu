@@ -58,8 +58,8 @@ class Signin extends Component {
                         value={this.state.password}
                         placeholder="entrez votre mot de passe"
                     />
-                    <Button variant="primary" type="submit" as={Link} to="/joke">Connexion</Button> 
-                    <Button variant="secondary" as={Link} to="/signup">
+                    <Button variant="success" type="submit" as={Link} to="/joke">Connexion</Button> 
+                    <Button variant="danger" as={Link} to="/signup">
                         Je n'ai pas de compte
                     </Button>
                 </Form>

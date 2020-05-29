@@ -58,7 +58,7 @@ class Joke extends Component {
                         value={this.state.password}
                         placeholder="entrez votre blague"
                     />
-                    <Button variant="primary" type="submit">Validez</Button>
+                    <Button variant="success" type="submit">Validez</Button>
     
                     <Button variant="secondary" as={Link} to="/blaguealeatoire">
                           Obtenir une nouvelle blague aléatoire

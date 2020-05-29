@@ -74,8 +74,8 @@ class Signup extends Component {
                         value={this.state.verifyPassword}
                         placeholder="Retapez votre mot de passe"
                     />
-                    <Button variant="primary" type="submit">Inscription</Button>
-                    <Button variant="secondary" as={Link} to="/signin">
+                    <Button variant="success" type="submit">Inscription</Button>
+                    <Button variant="danger" as={Link} to="/signin">
                         J'ai déjà un compte
                     </Button>
                 </Form>

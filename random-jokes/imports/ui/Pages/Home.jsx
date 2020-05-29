@@ -7,10 +7,10 @@ import Button    from 'react-bootstrap/Button';
 const Home = () => {
     return (
         <Container>
-            <Button variant="primary" as={Link} to="/signin" block>
+            <Button variant="info" as={Link} to="/signin" block>
                 Se connecter
             </Button>
-            <Button variant="primary" as={Link} to="/signup" block>
+            <Button variant="warning" as={Link} to="/signup" block>
                 Créer un compte
             </Button>
     
