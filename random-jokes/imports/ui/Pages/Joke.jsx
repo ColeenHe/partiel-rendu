@@ -10,18 +10,18 @@ import Button    from 'react-bootstrap/Button';
 
 class Joke extends Component {
     state = {
-        blague: "",
+       text: "",
     };
 
     handleSubmit = (event) => {
         event.preventDefault();
     
-        if (this.state.password === "") {
-            toast.error("Votre blague n'est pas renseigné");
+        if (this.state.text === "") {
+            toast.error("METS TA BLAGUE !");
             return;
         }
 
-        Meteor.loginWithPassword(this.state.email, this.state.password, (error) => {
+        Meteor.loginWithText(this.state.text, (error) => {
             if (error) {
                 toast.error(error.reason);
             } else {
@@ -42,11 +42,14 @@ class Joke extends Component {
                         type="text"
                         name="text"
                         onChange={this.handleChange}
-                        value={this.state.password}
+                        value={this.state.text}
                         placeholder="entrez votre blague"
                     />
                     <Button variant="success" type="submit">Validez</Button>
-
+    
+                    <Button variant="secondary" as={Link} to="/blaguealeatoire">
+                          Obtenir une nouvelle blague aléatoire
+                      </Button>
                 </Form>
             </Container>
         );
